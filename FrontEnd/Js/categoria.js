@@ -77,7 +77,6 @@ function createProductCard(product, index) {
     card.innerHTML = `
         <div class="product-image">
             <img src="${imagePath}" alt="${product.nombre}" onerror="this.src='https://via.placeholder.com/250x250?text=${encodeURIComponent(product.nombre)}'">
-            <span class="product-badge">Popular</span>
         </div>
         <div class="product-info">
             <h3 class="product-name">${product.nombre}</h3>

@@ -32,10 +32,22 @@ function scrollToCategories() {
 
 // Navegación a categoría
 function navigateToCategory(category) {
-    const frontendPrefix = window.location.pathname.toLowerCase().startsWith('/frontend')
-        ? '/frontend'
-        : '';
+    const isLocal = (location.hostname === 'localhost' || location.hostname === '127.0.0.1' || location.protocol === 'file:' || location.hostname === '');
 
+    if (isLocal) {
+        const localRoutes = {
+            Silenciadores: 'Html/Silenciadores.html',
+            Catalizadores: 'Html/Catalizadores.html',
+            Flexibles: 'Html/Flexibles.html',
+            Accesorios: 'Html/Accesorios.html',
+            Extras: 'Html/Extras.html'
+        };
+        window.location.href = localRoutes[category] || 'Html/Silenciadores.html';
+        return;
+    }
+
+    // Production / deployed routes (friendly URLs)
+    const frontendPrefix = window.location.pathname.toLowerCase().startsWith('/frontend') ? '/frontend' : '/frontend';
     const routes = {
         Silenciadores: `${frontendPrefix}/silenciadores`,
         Catalizadores: `${frontendPrefix}/catalizadores`,

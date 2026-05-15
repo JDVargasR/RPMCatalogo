@@ -542,40 +542,54 @@
 }
 
 .specifications {
-    border-top: 2px solid var(--light-bg);
-    padding-top: 1rem;
+    border-top: 3px solid var(--secondary-color);
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .specifications h3 {
     color: var(--primary-color);
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .specs-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 1.2rem;
 }
 
 .spec-item {
-    background: var(--light-bg);
-    padding: 0.8rem;
-    border-radius: 5px;
+    background: #fafafa;
+    padding: 1.2rem;
+    border-radius: 8px;
+    border-left: 3px solid var(--secondary-color);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+.spec-item:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .spec-label {
     color: var(--text-light);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 600;
     text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-bottom: 0.5rem;
 }
 
 .spec-value {
-    color: var(--text-dark);
+    color: #6b8b7b;
     font-weight: 700;
-    font-size: 0.95rem;
-    margin-top: 0.3rem;
+    font-size: 1.05rem;
+    margin-top: 0rem;
 }
 
 /* Acciones del Modal */
