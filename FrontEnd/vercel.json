@@ -1,0 +1,61 @@
+{
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/Index.html"
+    },
+    {
+      "source": "/index.html",
+      "destination": "/Index.html"
+    },
+    {
+      "source": "/frontend",
+      "destination": "/Index.html"
+    },
+    {
+      "source": "/frontend/",
+      "destination": "/Index.html"
+    },
+    {
+      "source": "/frontend/silenciadores",
+      "destination": "/Html/Silenciadores.html"
+    },
+    {
+      "source": "/frontend/catalizadores",
+      "destination": "/Html/Catalizadores.html"
+    },
+    {
+      "source": "/frontend/flexibles",
+      "destination": "/Html/Flexibles.html"
+    },
+    {
+      "source": "/frontend/accesorios",
+      "destination": "/Html/Accesorios.html"
+    },
+    {
+      "source": "/frontend/extras",
+      "destination": "/Html/Extras.html"
+    },
+    {
+      "source": "/silenciadores",
+      "destination": "/Html/Silenciadores.html"
+    },
+    {
+      "source": "/catalizadores",
+      "destination": "/Html/Catalizadores.html"
+    },
+    {
+      "source": "/flexibles",
+      "destination": "/Html/Flexibles.html"
+    },
+    {
+      "source": "/accesorios",
+      "destination": "/Html/Accesorios.html"
+    },
+    {
+      "source": "/extras",
+      "destination": "/Html/Extras.html"
+    }
+  ]
+}

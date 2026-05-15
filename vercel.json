@@ -1,0 +1,77 @@
+{
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/Index.html"
+    },
+    {
+      "source": "/index.html",
+      "destination": "/Index.html"
+    },
+    {
+      "source": "/frontend",
+      "destination": "/FrontEnd/Index.html"
+    },
+    {
+      "source": "/frontend/",
+      "destination": "/FrontEnd/Index.html"
+    },
+    {
+      "source": "/frontend/index.html",
+      "destination": "/FrontEnd/Index.html"
+    },
+    {
+      "source": "/frontend/silenciadores",
+      "destination": "/FrontEnd/Html/Silenciadores.html"
+    },
+    {
+      "source": "/frontend/catalizadores",
+      "destination": "/FrontEnd/Html/Catalizadores.html"
+    },
+    {
+      "source": "/frontend/flexibles",
+      "destination": "/FrontEnd/Html/Flexibles.html"
+    },
+    {
+      "source": "/frontend/accesorios",
+      "destination": "/FrontEnd/Html/Accesorios.html"
+    },
+    {
+      "source": "/frontend/extras",
+      "destination": "/FrontEnd/Html/Extras.html"
+    },
+    {
+      "source": "/FrontEnd",
+      "destination": "/FrontEnd/Index.html"
+    },
+    {
+      "source": "/FrontEnd/",
+      "destination": "/FrontEnd/Index.html"
+    },
+    {
+      "source": "/FrontEnd/index.html",
+      "destination": "/FrontEnd/Index.html"
+    },
+    {
+      "source": "/FrontEnd/Html/Silenciadores.html",
+      "destination": "/FrontEnd/Html/Silenciadores.html"
+    },
+    {
+      "source": "/FrontEnd/Html/Catalizadores.html",
+      "destination": "/FrontEnd/Html/Catalizadores.html"
+    },
+    {
+      "source": "/FrontEnd/Html/Flexibles.html",
+      "destination": "/FrontEnd/Html/Flexibles.html"
+    },
+    {
+      "source": "/FrontEnd/Html/Accesorios.html",
+      "destination": "/FrontEnd/Html/Accesorios.html"
+    },
+    {
+      "source": "/FrontEnd/Html/Extras.html",
+      "destination": "/FrontEnd/Html/Extras.html"
+    }
+  ]
+}

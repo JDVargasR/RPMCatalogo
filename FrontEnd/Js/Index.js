@@ -32,15 +32,19 @@ function scrollToCategories() {
 
 // Navegación a categoría
 function navigateToCategory(category) {
+    const frontendPrefix = window.location.pathname.toLowerCase().startsWith('/frontend')
+        ? '/frontend'
+        : '';
+
     const routes = {
-        Silenciadores: 'Html/Silenciadores.html',
-        Catalizadores: 'Html/Catalizadores.html',
-        Flexibles: 'Html/Flexibles.html',
-        Accesorios: 'Html/Accesorios.html',
-        Extras: 'Html/Extras.html'
+        Silenciadores: `${frontendPrefix}/silenciadores`,
+        Catalizadores: `${frontendPrefix}/catalizadores`,
+        Flexibles: `${frontendPrefix}/flexibles`,
+        Accesorios: `${frontendPrefix}/accesorios`,
+        Extras: `${frontendPrefix}/extras`
     };
 
-    window.location.href = routes[category] || 'Html/Silenciadores.html';
+    window.location.href = routes[category] || `${frontendPrefix}/silenciadores`;
 }
 
 // ============================================
