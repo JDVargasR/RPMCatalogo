@@ -10,6 +10,22 @@
       "destination": "/Index.html"
     },
     {
+      "source": "/Css/:path*",
+      "destination": "/FrontEnd/Css/:path*"
+    },
+    {
+      "source": "/Js/:path*",
+      "destination": "/FrontEnd/Js/:path*"
+    },
+    {
+      "source": "/Img/:path*",
+      "destination": "/FrontEnd/Img/:path*"
+    },
+    {
+      "source": "/Html/:path*",
+      "destination": "/FrontEnd/Html/:path*"
+    },
+    {
       "source": "/frontend",
       "destination": "/FrontEnd/Index.html"
     },
