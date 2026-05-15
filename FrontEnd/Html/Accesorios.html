@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios - RPM Silenciadores</title>
+    <link rel="stylesheet" href="../Css/Index.css">
+    <link rel="stylesheet" href="../Css/categoria.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-category="Accesorios" data-page-title="Accesorios">
+    <header class="header">
+        <div class="container">
+            <div class="logo" onclick="window.location.href='../Index.html'">
+                <img src="../Img/Logo/Logo.jpeg" alt="RPM Silenciadores" class="logo-img">
+                <h1>RPM Silenciadores</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="../Index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="../Index.html#categories" class="nav-link">Categorías</a></li>
+                    <li><a href="../Index.html#contact" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero category-hero" id="home">
+        <div class="hero-content">
+            <h2 id="categoryName">Accesorios</h2>
+            <p>Accesorios complementarios para instalación, protección y acabado de sistemas de escape con enfoque profesional.</p>
+            <button class="btn btn-primary" onclick="window.location.href='../Index.html#categories'">
+                Ver Categorías <i class="fas fa-arrow-left"></i>
+            </button>
+        </div>
+    </section>
+
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label>Ordenar por:</label>
+                    <select id="sortSelect" onchange="sortProducts()">
+                        <option value="default">Por defecto</option>
+                        <option value="price-asc">Precio: Menor a Mayor</option>
+                        <option value="price-desc">Precio: Mayor a Menor</option>
+                        <option value="name-asc">Nombre: A-Z</option>
+                        <option value="name-desc">Nombre: Z-A</option>
+                    </select>
+                </div>
+                <!-- Vista fija eliminada por diseño -->
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="productsContainer"></div>
+        </div>
+    </section>
+
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <div class="modal-gallery">
+                    <div class="main-image">
+                        <img id="mainImage" src="" alt="Producto">
+                    </div>
+                    <div class="thumbnail-images" id="thumbnailContainer"></div>
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalProductName">Nombre del Producto</h2>
+                    <div class="price-section">
+                        <span class="price" id="modalProductPrice">₡0.00</span>
+                        <span class="stock-badge">En Inventario</span>
+                    </div>
+                    <p class="description" id="modalProductDescription">Descripción del producto</p>
+                    <div class="specifications">
+                        <h3>Especificaciones</h3>
+                        <div class="specs-grid" id="specsContainer"></div>
+                    </div>
+                    <button class="btn btn-secondary" onclick="contactForInfo()">
+                        <i class="fas fa-phone"></i> Contactar para Más Información
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sobre Nosotros</h4>
+                    <p>RPM Silenciadores es líder en la fabricación y distribución de silenciadores, catalizadores y accesorios de vehículos.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> +(506) 6007-8606</p>
+                    <p><i class="fas fa-envelope"></i> Silenciadores.rpmalajuela@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100089794182647"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/silenciadores_rpm?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/50660078606"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 RPM Silenciadores. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../Js/data/productos.js"></script>
+    <script src="../Js/categoria.js"></script>
+</body>
+</html>

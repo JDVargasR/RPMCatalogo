@@ -1,0 +1,238 @@
+/* ============================================
+   EJEMPLOS Y GUÍA DE IMÁGENES
+   ============================================ */
+
+TAMAÑOS Y PROPORCIONES
+======================
+
+Logo (50x50px):
+Ejemplo: https://via.placeholder.com/50x50?text=Logo
+
+Imágenes de Tarjetas (250x250px):
+Ejemplo: https://via.placeholder.com/250x250?text=Producto
+
+Imágenes Galería Modal (400x400px):
+Ejemplo: https://via.placeholder.com/400x400?text=Producto
+
+
+PLACEHOLDERS AUTOMÁTICOS EN LA APLICACIÓN
+==========================================
+
+Si una imagen no existe, la aplicación automáticamente muestra un placeholder.
+
+Ejemplo en producto:
+- Si falta: ../Img/Silenciadores/silenciador1.jpg
+- Se muestra: https://via.placeholder.com/250x250?text=Silenciador+Deportivo+Premium
+
+
+FUENTES DE IMÁGENES LIBRES
+==========================
+
+Para descargar imágenes gratis de autopartes y vehículos:
+
+1. Unsplash (https://unsplash.com)
+   Busca: "car parts", "muffler", "exhaust"
+
+2. Pexels (https://pexels.com)
+   Busca: "automotive", "vehicle", "engine"
+
+3. Pixabay (https://pixabay.com)
+   Busca: "car", "automotive parts"
+
+4. Freepik (https://freepik.com)
+   Busca: "car accessories", "vehicle parts"
+
+
+EJEMPLO DE ESTRUCTURA DE IMAGEN
+================================
+
+Para Silenciador Deportivo Premium:
+- Imagen Principal: Foto frontal del silenciador
+- Imagen 2: Detalle del interior
+- Imagen 3: Instalación en vehículo
+- Imagen 4: Especificaciones técnicas
+
+
+OPTIMIZACIÓN DE IMÁGENES
+========================
+
+Herramientas recomendadas:
+
+TinyPNG (https://tinypng.com)
+- Comprimir sin perder calidad
+- Soporta PNG y JPEG
+
+ImageOptim (https://imageoptim.com)
+- Optimizador desktop gratuito
+
+Online Convert (https://image.online-convert.com)
+- Convertir entre formatos
+
+
+GUÍA DE NOMBRES DE ARCHIVOS
+===========================
+
+Recomendaciones:
+✓ Nombres descriptivos en minúsculas
+✓ Usar guiones para separar palabras
+✓ Evitar caracteres especiales
+✓ Indicar versión/variante
+
+Ejemplos válidos:
+- silenciador-deportivo-1.jpg
+- catalizador-diesel-main.jpg
+- flexible-presurizado-detalle.jpg
+
+Evitar:
+✗ Silenciador 1.jpg (espacios)
+✗ CAT#2021.jpg (caracteres especiales)
+✗ 123.jpg (poco descriptivo)
+
+
+CÓMO REEMPLAZAR IMÁGENES
+=========================
+
+1. Mantén el mismo nombre de archivo
+2. Reemplaza el archivo en la carpeta
+3. Limpia caché del navegador (Ctrl+Shift+R)
+4. Recarga la página
+
+Alternativamente:
+1. Cambia el nombre del archivo a uno nuevo
+2. Actualiza la ruta en Js/data/productos.js
+3. Guarda y recarga
+
+
+CREAR MINIATURAS
+================
+
+Las miniaturas se generan automáticamente a partir de las imágenes.
+
+Recomendación:
+- Usa la misma imagen para miniatura
+- O crea versiones optimizadas de menor peso
+- Sistema mostrará thumbnail de 80x80px
+
+
+EJEMPLO PRÁCTICO
+================
+
+Imagina que quieres agregar un nuevo Silenciador:
+
+1. Descarga 3-4 imágenes de Unsplash/Pixabay
+   - Foto principal del silenciador
+   - Detalle técnico
+   - Instalación
+
+2. Redimensiona a 600x600px en un editor
+3. Optimiza el tamaño con TinyPNG
+4. Guarda como:
+   - silenciador-turbo-1.jpg
+   - silenciador-turbo-2.jpg
+   - silenciador-turbo-3.jpg
+
+5. Coloca en: FrontEnd/Img/Silenciadores/
+
+6. Actualiza productos.js:
+   {
+       id: 4,
+       nombre: "Silenciador Turbo X",
+       precio: 199.99,
+       imagen: "../Img/Silenciadores/silenciador-turbo-1.jpg",
+       imagenes: [
+           "../Img/Silenciadores/silenciador-turbo-1.jpg",
+           "../Img/Silenciadores/silenciador-turbo-2.jpg",
+           "../Img/Silenciadores/silenciador-turbo-3.jpg"
+       ],
+       descripcion: "...",
+       especificaciones: { ... }
+   }
+
+7. Guarda y recarga la página
+
+
+PROBLEMAS COMUNES CON IMÁGENES
+===============================
+
+Imagen se ve pixelada:
+→ Aumenta la resolución original (mínimo 400x400)
+→ No estires imágenes pequeñas
+
+Imagen se carga lentamente:
+→ Reduce el tamaño de archivo (TinyPNG)
+→ Usa JPEG en lugar de PNG si es posible
+→ Optimiza para web
+
+Imagen no aparece:
+→ Verifica la ruta exacta
+→ Revisa mayúsculas/minúsculas
+→ Abre la consola (F12) para ver errores
+→ Usa la herramienta de Network para ver estado 404
+
+Colores diferentes en navegadores:
+→ Usa sRGB color space
+→ Evita perfiles de color incrustados
+
+
+AGREGAR FAVICON
+===============
+
+1. Crea o descarga un favicon (32x32px):
+   Sitio: favicon-generator.org
+
+2. Guarda como: FrontEnd/favicon.ico
+
+3. Agrega a Index.html en <head>:
+   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+4. Y a Html/categoria.html:
+   <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+
+GALERÍA COMPLETA - EJEMPLO
+===========================
+
+Para un producto con galería completa, incluye:
+
+1. Vista frontal (ángulo 45°)
+2. Vista trasera
+3. Detalle de acabado
+4. Especificaciones técnicas
+5. En contexto/instalación
+6. Comparativa de tamaños
+7. Accesorios incluidos
+
+Al menos 3-4 imágenes por producto es recomendado.
+
+
+LICENCIAS Y DERECHOS
+====================
+
+Asegúrate de que las imágenes:
+✓ Eres el dueño o creador
+✓ Tienes licencia de uso
+✓ No tienen derechos de autor
+✓ Son de sitios con licencia CC0 o similar
+
+
+SIGUIENTES PASOS
+================
+
+1. Crea las carpetas de imágenes
+2. Descarga/crea imágenes de prueba
+3. Coloca en las carpetas correspondientes
+4. Verifica que las rutas sean correctas
+5. Prueba la galería del modal
+6. Personaliza según tu marca
+
+
+CONTACTO
+=========
+
+¿Necesitas ayuda con imágenes?
+Consulta los recursos libres mencionados arriba
+o contacta a nuestro equipo de diseño.
+
+---
+Guía de Imágenes v1.0
+Mayo 2026

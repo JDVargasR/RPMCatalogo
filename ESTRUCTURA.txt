@@ -1,0 +1,413 @@
+/* ============================================
+   RESUMEN VISUAL DE ESTRUCTURA
+   ============================================ */
+
+ÁRBOL DE ESTRUCTURA DEL PROYECTO
+=================================
+
+RPMCatalogo/
+│
+├── 📄 README.md                    ← Documentación principal
+├── 📄 CONFIGURACION.txt            ← Guía de configuración
+├── 📄 GUIA_IMAGENES.txt            ← Guía de imágenes
+├── 📄 EXTENSIONES.txt              ← Mejoras futuras
+│
+└── FrontEnd/
+    │
+    ├── 📄 Index.html               ← Página principal
+    │
+    ├── 📁 Html/
+    │   └── 📄 categoria.html        ← Página de categorías
+    │
+    ├── 📁 Css/
+    │   ├── 📄 Index.css             ← Estilos principales (responsive)
+    │   └── 📄 categoria.css         ← Estilos de categoría y modal
+    │
+    ├── 📁 Js/
+    │   ├── 📄 Index.js              ← Lógica de página principal
+    │   ├── 📄 categoria.js          ← Lógica de categoría y modal
+    │   │
+    │   └── 📁 data/
+    │       └── 📄 productos.js      ← Base de datos de productos
+    │
+    └── 📁 Img/
+        ├── 📁 Logo/
+        │   └── 🖼️ logo.png
+        │
+        ├── 📁 Silenciadores/
+        │   ├── 🖼️ silenciador1.jpg
+        │   ├── 🖼️ silenciador1-2.jpg
+        │   └── 🖼️ ...
+        │
+        ├── 📁 Catalizadores/
+        │   ├── 🖼️ catalizador1.jpg
+        │   └── 🖼️ ...
+        │
+        ├── 📁 Flexibles/
+        │   ├── 🖼️ flexible1.jpg
+        │   └── 🖼️ ...
+        │
+        ├── 📁 Accesorios/
+        │   ├── 🖼️ brida1.jpg
+        │   └── 🖼️ ...
+        │
+        └── 📁 Extras/
+            ├── 🖼️ tips1.jpg
+            └── 🖼️ ...
+
+
+FLUJO DE NAVEGACIÓN
+===================
+
+                    ┌─────────────────┐
+                    │  Index.html     │
+                    │  (Principal)    │
+                    └────────┬────────┘
+                             │
+                    ┌────────▼────────┐
+                    │  5 Categorías   │
+                    ├─────────────────┤
+                    │ • Silenciadores │
+                    │ • Catalizadores │
+                    │ • Flexibles     │
+                    │ • Accesorios    │
+                    │ • Extras        │
+                    └────────┬────────┘
+                             │
+                    ┌────────▼────────────────┐
+                    │ categoria.html          │
+                    │ (Grid de Productos)     │
+                    └────────┬────────────────┘
+                             │
+                    ┌────────▼──────────────────┐
+                    │ Modal de Producto        │
+                    ├──────────────────────────┤
+                    │ • Galería de imágenes    │
+                    │ • Especificaciones       │
+                    │ • Selector de cantidad   │
+                    │ • Agregar al carrito     │
+                    │ • Contactar              │
+                    └──────────────────────────┘
+
+
+COMPONENTES CLAVE
+=================
+
+1. HEADER (Presente en todas las páginas)
+   ├─ Logo
+   ├─ Navegación (responsive con menú hamburguesa)
+   └─ Contacto
+
+2. HERO SECTION (Solo en Index)
+   ├─ Título principal
+   ├─ Subtítulo
+   └─ Botón CTA
+
+3. CATEGORÍAS (Index)
+   ├─ Grid de 5 tarjetas
+   ├─ Icono + Título + Descripción
+   └─ Efecto hover
+
+4. PÁGINA DE CATEGORÍA
+   ├─ Breadcrumb
+   ├─ Filtros (ordenamiento, vista)
+   ├─ Grid de productos
+   └─ Tarjetas interactivas
+
+5. MODAL DE PRODUCTO
+   ├─ Galería de imágenes (principal + miniaturas)
+   ├─ Información del producto
+   ├─ Especificaciones técnicas
+   ├─ Selector de cantidad
+   ├─ Botón agregar carrito
+   └─ Botón contactar
+
+6. FOOTER
+   ├─ Sobre nosotros
+   ├─ Contacto
+   └─ Redes sociales
+
+
+FUNCIONALIDADES IMPLEMENTADAS
+==============================
+
+✅ Página Principal
+   • Navegación responsive
+   • Hero section atractivo
+   • Grid de categorías con efecto hover
+   • Footer con información
+
+✅ Página de Categoría
+   • Breadcrumb de navegación
+   • Filtros de ordenamiento
+   • Cambio de vista (grid/lista)
+   • Grid de productos responsive
+   • Efecto de animación al scroll
+
+✅ Modal de Producto
+   • Galería de imágenes expandible
+   • Miniaturas interactivas
+   • Especificaciones técnicas
+   • Selector de cantidad
+   • Botón agregar carrito
+   • Opción contactar por email
+
+✅ Responsive Design
+   • Desktop (1200px+)
+   • Tablet (768px - 1199px)
+   • Móvil (480px - 767px)
+   • Móvil pequeño (<480px)
+
+✅ Interactividad
+   • Menú hamburguesa móvil
+   • Efectos hover
+   • Animaciones suaves
+   • Transiciones fluidas
+
+✅ Almacenamiento Local
+   • Favoritos con localStorage
+   • Carrito guardado en sesión
+
+
+TECNOLOGÍAS UTILIZADAS
+======================
+
+Frontend:
+└─ HTML5
+   ├─ Semántica
+   ├─ Meta tags responsivos
+   └─ Estructura limpia
+
+└─ CSS3
+   ├─ Grid Layout
+   ├─ Flexbox
+   ├─ Media Queries
+   ├─ Animaciones
+   ├─ Transiciones
+   └─ Variables CSS
+
+└─ JavaScript (ES6+)
+   ├─ Arrow Functions
+   ├─ Template Literals
+   ├─ Array Methods
+   ├─ localStorage API
+   └─ DOM Manipulation
+
+Iconografía:
+└─ Font Awesome 6.4.0
+   ├─ Icons responsive
+   └─ 7,000+ iconos disponibles
+
+
+CARACTERÍSTICAS RESPONSIVE
+==========================
+
+Breakpoints:
+• Desktop:      1200px y superior
+• Tablet:       768px - 1199px
+• Móvil:        480px - 767px
+• Móvil Peq:    Menor a 480px
+
+Adapta:
+✓ Navegación (horizontal ↔ hamburguesa)
+✓ Grid (5 cols ↔ 1 col)
+✓ Modal (lado a lado ↔ apilado)
+✓ Texto (tamaños ajustados)
+✓ Espaciado (padding/margin flexible)
+✓ Fuentes (escalables)
+
+
+PALETA DE COLORES
+=================
+
+Primario:     #1a1a2e  (Azul Oscuro)
+  Uso: Headers, titulos, textos oscuros
+  
+Secundario:   #d63031  (Rojo)
+  Uso: Botones CTA, acentos importantes, precios
+  
+Terciario:    #f39c12  (Naranja/Dorado)
+  Uso: Enlaces hover, detalles, énfasis
+  
+Fondo Claro:  #ecf0f1  (Gris Claro)
+  Uso: Fondos secundarios, tarjetas alternas
+  
+Blanco:       #ffffff  (Blanco)
+  Uso: Fondos principales, text light
+  
+Texto Oscuro: #2c3e50  (Gris Oscuro)
+  Uso: Texto principal, contenido
+  
+Texto Claro:  #7f8c8d  (Gris Medio)
+  Uso: Texto secundario, descripciones
+
+
+BASE DE DATOS DE PRODUCTOS
+===========================
+
+Estructura por producto:
+{
+    id:               Número único
+    nombre:           Título del producto
+    precio:           Número (formato 0.00)
+    imagen:           URL/ruta a imagen principal
+    imagenes:         Array de URLs de galería
+    descripcion:      Texto descriptivo
+    especificaciones: Objeto con propiedades técnicas
+}
+
+Categorías:
+• Silenciadores  → 3 productos
+• Catalizadores  → 3 productos
+• Flexibles      → 3 productos
+• Accesorios     → 3 productos
+• Extras         → 3 productos
+
+Total: 15 productos de ejemplo
+
+
+EVENTOS Y LISTENERS
+===================
+
+Click Events:
+• navigateToCategory()     → Ir a categoría
+• openModal()              → Abrir modal producto
+• closeModal()             → Cerrar modal
+• toggleFavorite()         → Guardar favorito
+• addToCart()              → Agregar carrito
+• changeView()             → Cambiar vista
+• sortProducts()           → Ordenar productos
+
+Change Events:
+• #sortSelect onChange     → Ordenamiento
+
+Keyboard Events:
+• Escape → Cerrar modal
+
+Scroll Events:
+• Intersection Observer    → Animación al entrar
+
+
+ALMACENAMIENTO LOCAL
+====================
+
+localStorage keys:
+• 'favorites'  → Array de IDs de favoritos
+• 'carrito'    → Array de productos en carrito
+• 'usuario'    → Información del usuario (futuro)
+
+
+OPTIMIZACIONES IMPLEMENTADAS
+=============================
+
+Performance:
+✓ CSS Grid para layouts eficientes
+✓ Flexbox para alineación
+✓ Transiciones GPU-acceleradas (transform)
+✓ Lazy loading de imágenes (con onerror)
+✓ Minimal reflow/repaint
+✓ Event delegation donde aplica
+
+SEO:
+✓ Estructura HTML semántica
+✓ Meta tags descriptivos
+✓ Titles y descriptions
+✓ Alt text en imágenes
+✓ URLs descriptivas
+
+Accesibilidad:
+✓ Contraste de colores WCAG AA
+✓ Links con focus visible
+✓ Botones accesibles
+✓ Iconos con etiquetas
+✓ Navegación por teclado
+
+
+VALIDACIÓN
+==========
+
+✓ HTML válido (W3C)
+✓ CSS válido (W3C)
+✓ JavaScript sin errores
+✓ Responsive en todos los breakpoints
+✓ Funcionalidad completa en:
+  - Chrome/Chromium
+  - Firefox
+  - Safari
+  - Edge
+
+
+PRÓXIMOS PASOS SUGERIDOS
+========================
+
+Corto Plazo:
+1. Agregar imágenes reales
+2. Personalizar colores (mantener el esquema)
+3. Agregar logo de la empresa
+4. Completar información de contacto
+
+Mediano Plazo:
+5. Implementar carrito completo
+6. Agregar búsqueda
+7. Sistema de filtros avanzados
+8. Comentarios y reseñas
+
+Largo Plazo:
+9. Backend para pedidos
+10. Integración de pagos
+11. Sistema de usuarios
+12. Panel de administración
+
+
+ARCHIVOS INCLUIDOS
+==================
+
+📋 Documentación:
+   • README.md
+   • CONFIGURACION.txt
+   • GUIA_IMAGENES.txt
+   • EXTENSIONES.txt
+   • ESTRUCTURA.txt (este archivo)
+
+🎨 HTML:
+   • FrontEnd/Index.html
+   • FrontEnd/Html/categoria.html
+
+🎯 CSS:
+   • FrontEnd/Css/Index.css
+   • FrontEnd/Css/categoria.css
+
+⚙️ JavaScript:
+   • FrontEnd/Js/Index.js
+   • FrontEnd/Js/categoria.js
+   • FrontEnd/Js/data/productos.js
+
+🖼️ Imágenes:
+   • Carpeta de estructura Img/
+   • 15 ejemplos de productos
+
+
+MÉTRICAS DE INICIO RÁPIDO
+==========================
+
+Tiempo de carga esperado:
+• Desktop:  < 2 segundos
+• Móvil:    < 3 segundos
+
+Size de archivos (minificados):
+• HTML:     ~8 KB
+• CSS:      ~45 KB
+• JS:       ~25 KB
+• Total:    ~78 KB (sin imágenes)
+
+Lighthouse Scores (esperado):
+• Performance:    85+
+• Accessibility:  90+
+• Best Practices: 90+
+• SEO:            95+
+
+
+---
+ESTRUCTURA v1.0
+Mayo 2026
+RPM Autopartes

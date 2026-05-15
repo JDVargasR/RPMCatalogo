@@ -1,0 +1,216 @@
+/* ============================================
+   INSTRUCCIONES DE CONFIGURACIÓN
+   ============================================ */
+
+ESTRUCTURA DE CARPETAS PARA IMÁGENES
+====================================
+
+Debes crear las siguientes carpetas en FrontEnd/Img/ y agregar imágenes:
+
+1. Logo/
+   └── logo.png              (Logo de la empresa, recomendado 50x50px)
+
+2. Silenciadores/
+   ├── silenciador1.jpg
+   ├── silenciador1-2.jpg
+   ├── silenciador1-3.jpg
+   ├── silenciador2.jpg
+   ├── silenciador2-2.jpg
+   ├── silenciador3.jpg
+   └── ... (agregar más según necesidad)
+
+3. Catalizadores/
+   ├── catalizador1.jpg
+   ├── catalizador1-2.jpg
+   ├── catalizador2.jpg
+   ├── catalizador3.jpg
+   └── ... (agregar más según necesidad)
+
+4. Flexibles/
+   ├── flexible1.jpg
+   ├── flexible2.jpg
+   ├── flexible3.jpg
+   └── ... (agregar más según necesidad)
+
+5. Accesorios/
+   ├── brida1.jpg
+   ├── aislamiento1.jpg
+   ├── sensor1.jpg
+   └── ... (agregar más según necesidad)
+
+6. Extras/
+   ├── tips1.jpg
+   ├── protector1.jpg
+   ├── adaptadores1.jpg
+   └── ... (agregar más según necesidad)
+
+
+ESPECIFICACIONES RECOMENDADAS DE IMÁGENES
+==========================================
+
+Logo:
+- Tamaño: 50x50 px
+- Formato: PNG (con transparencia recomendada)
+- Color: Que contraste con fondo oscuro
+
+Imágenes de Productos:
+- Tamaño: Mínimo 400x400 px (preferiblemente 600x600+ para galería)
+- Formato: JPEG o PNG
+- Fondo: Preferiblemente neutro/blanco
+- Resolución: Optimizada para web (72-96 DPI)
+- Peso: <500 KB por imagen
+
+Proporciones:
+- Cuadrada (1:1) para tarjetas
+- La galería se adapta automáticamente
+
+
+CÓMO AGREGAR NUEVAS IMÁGENES
+=============================
+
+1. Coloca la imagen en la carpeta correspondiente:
+   FrontEnd/Img/[Categoria]/imagen.jpg
+
+2. Actualiza el archivo Js/data/productos.js:
+
+   {
+       id: 1,
+       nombre: "Nombre del Producto",
+       precio: 259.99,
+       imagen: "../Img/Silenciadores/silenciador1.jpg",    ← Imagen principal (tarjeta)
+       imagenes: [                                          ← Galería de imágenes
+           "../Img/Silenciadores/silenciador1.jpg",
+           "../Img/Silenciadores/silenciador1-2.jpg",
+           "../Img/Silenciadores/silenciador1-3.jpg"
+       ],
+       descripcion: "Descripción...",
+       especificaciones: { ... }
+   }
+
+3. Guarda los cambios y recarga el navegador.
+
+
+AGREGAR NUEVAS CATEGORÍAS
+=========================
+
+1. Abre FrontEnd/Index.html
+2. En la sección "categories-grid", agrega una nueva tarjeta:
+
+   <div class="category-card" onclick="navigateToCategory('NuevaCategoria')">
+       <div class="category-icon">
+           <i class="fas fa-[icon]"></i>
+       </div>
+       <h3>Nueva Categoría</h3>
+       <p>Descripción de la categoría</p>
+       <span class="view-more">Ver Productos <i class="fas fa-arrow-right"></i></span>
+   </div>
+
+3. Abre FrontEnd/Js/data/productos.js
+4. Agrega un nuevo array en el objeto "productos":
+
+   NuevaCategoria: [
+       {
+           id: 16,
+           nombre: "Producto 1",
+           precio: 99.99,
+           imagen: "../Img/NuevaCategoria/imagen.jpg",
+           imagenes: ["../Img/NuevaCategoria/imagen.jpg"],
+           descripcion: "Descripción...",
+           especificaciones: { propiedad: "valor" }
+       },
+       // ... más productos
+   ]
+
+5. Crea la carpeta FrontEnd/Img/NuevaCategoria/ y agrega las imágenes.
+
+
+PERSONALIZACIÓN DE ESTILOS
+==========================
+
+Colores principales:
+- Edita :root en FrontEnd/Css/Index.css
+
+Tipografía:
+- Cambiar fuente: edita "font-family" en body
+
+Espaciado:
+- Ajusta "padding" y "gap" según necesidad
+
+Breakpoints responsivos:
+- Modifica los valores en @media queries
+
+
+TESTING Y VALIDACIÓN
+====================
+
+✓ Prueba en diferentes navegadores:
+  - Chrome, Firefox, Safari, Edge
+
+✓ Prueba en dispositivos diferentes:
+  - Desktop (1920x1080, 1366x768)
+  - Tablet (768x1024)
+  - Móvil (375x667, 480x800)
+
+✓ Valida HTML: https://validator.w3.org/
+
+✓ Valida CSS: https://jigsaw.w3.org/css-validator/
+
+✓ Revisa accesibilidad: https://wave.webaim.org/
+
+
+SOLUCIÓN DE PROBLEMAS
+=====================
+
+Las imágenes no se cargan:
+→ Verifica que la ruta sea correcta
+→ Asegúrate que el nombre del archivo coincida (mayúsculas/minúsculas)
+→ Usa placeholders automáticos si la imagen falla
+
+El modal no abre:
+→ Verifica que categoria.js esté cargado
+→ Abre la consola del navegador (F12) para ver errores
+
+Estilos no se aplican:
+→ Limpia la caché (Ctrl+Shift+R)
+→ Verifica que las rutas a CSS sean correctas
+→ Revisa si hay errores de sintaxis CSS
+
+Menú móvil no funciona:
+→ Verifica que el ID "menuToggle" exista en el HTML
+→ Comprueba que Index.js esté cargado
+
+
+RECURSOS ÚTILES
+===============
+
+Font Awesome Icons: https://fontawesome.com/icons
+Google Fonts: https://fonts.google.com/
+Color Palette Generator: https://coolors.co/
+Placeholder Images: https://via.placeholder.com/
+
+
+SIGUIENTES PASOS
+================
+
+1. ✓ Configura las carpetas de imágenes
+2. ✓ Agrega logos e imágenes de productos
+3. ✓ Personaliza colores y tipografía
+4. ✓ Prueba en diferentes dispositivos
+5. ⚪ Implementa carrito de compras completo
+6. ⚪ Agrega sistema de login
+7. ⚪ Integra pasarela de pago
+8. ⚪ Implementa buscador
+9. ⚪ Agrega panel de administrador
+10. ⚪ Deploy a servidor web
+
+
+CONTACTO PARA SOPORTE
+====================
+
+Si tienes preguntas o problemas, contacta:
+📧 soporte@rpautopartes.com
+📞 +1 (555) 123-4567
+
+---
+Generado: Mayo 2026
+RPM Autopartes © 2026

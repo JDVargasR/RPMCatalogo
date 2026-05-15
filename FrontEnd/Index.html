@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPM Silenciadores | Catálogo Virtual</title>
+    <link rel="stylesheet" href="Css/Index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navegación -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="Img/Logo/Logo.jpeg" alt="RPM Silenciadores" class="logo-img">
+                <h1>RPM Silenciadores | Catalogo</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Inicio</a></li>
+                    <li><a href="#categories" class="nav-link">Categorías</a></li>
+                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Bienvenido a RPM Silenciadores</h2>
+            <p>Silenciadores, Catalizadores, Accesorios y Mas</p>
+            <p>Todo siempre de la mejor calidad</p>
+            <button class="btn btn-primary" onclick="scrollToCategories()">
+                Ver Catálogo <i class="fas fa-arrow-down"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Categorías -->
+    <section class="categories-section" id="categories">
+        <div class="container">
+            <h2 class="section-title">Nuestras Categorías</h2>
+            <p class="section-subtitle">Explora nuestros productos organizados por categoría</p>
+            
+            <div class="categories-grid">
+                <!-- Silenciadores -->
+                <div class="category-card" onclick="navigateToCategory('Silenciadores')">
+                    <div class="category-icon">
+                        <i class="fas fa-volume-mute"></i>
+                    </div>
+                    <h3>Silenciadores</h3>
+                    <p>Sistema de escape silencioso y de excelente rendimiento</p>
+                    <span class="view-more">Ver Productos <i class="fas fa-arrow-right"></i></span>
+                </div>
+
+                <!-- Catalizadores -->
+                <div class="category-card" onclick="navigateToCategory('Catalizadores')">
+                    <div class="category-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Catalizadores</h3>
+                    <p>Componentes de control de emisiones ambientales</p>
+                    <span class="view-more">Ver Productos <i class="fas fa-arrow-right"></i></span>
+                </div>
+
+                <!-- Flexibles -->
+                <div class="category-card" onclick="navigateToCategory('Flexibles')">
+                    <div class="category-icon">
+                        <i class="fas fa-wave-square"></i>
+                    </div>
+                    <h3>Flexibles</h3>
+                    <p>Tuberías flexibles, resistentes y duraderas</p>
+                    <span class="view-more">Ver Productos <i class="fas fa-arrow-right"></i></span>
+                </div>
+
+                <!-- Accesorios -->
+                <div class="category-card" onclick="navigateToCategory('Accesorios')">
+                    <div class="category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Accesorios</h3>
+                    <p>Accesorios complementarios para tu sistema de escape</p>
+                    <span class="view-more">Ver Productos <i class="fas fa-arrow-right"></i></span>
+                </div>
+
+                <!-- Extras -->
+                <div class="category-card" onclick="navigateToCategory('Extras')">
+                    <div class="category-icon">
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                    <h3>Extras</h3>
+                    <p>Productos adicionales esenciales para un trabajo ideal</p>
+                    <span class="view-more">Ver Productos <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sobre Nosotros</h4>
+                    <p>RPM Silenciadores es líder en la fabricación y distribución de silenciadores, catalizadores y accesorios de vehículos.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> +(506) 6007-8606</p>
+                    <p><i class="fas fa-envelope"></i> Silenciadores.rpmalajuela@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100089794182647"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/silenciadores_rpm?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/50660078606"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 RPM Silenciadores. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Js/Index.js"></script>
+</body>
+</html>

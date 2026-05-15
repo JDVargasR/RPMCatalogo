@@ -1,0 +1,470 @@
+/* ============================================
+   EXTENSIONES Y MEJORAS FUTURAS
+   ============================================ */
+
+CARRITO DE COMPRAS
+==================
+
+Para implementar un carrito completo, agrega esto a Js/carrito.js:
+
+// Guardar carrito en localStorage
+function guardarCarrito(carrito) {
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+}
+
+// Cargar carrito
+function cargarCarrito() {
+    return JSON.parse(localStorage.getItem('carrito') || '[]');
+}
+
+// Agregar producto al carrito
+function agregarAlCarrito(producto, cantidad) {
+    let carrito = cargarCarrito();
+    let item = carrito.find(p => p.id === producto.id);
+    
+    if (item) {
+        item.cantidad += cantidad;
+    } else {
+        carrito.push({
+            ...producto,
+            cantidad: cantidad
+        });
+    }
+    
+    guardarCarrito(carrito);
+    mostrarNotificacion('Producto agregado al carrito');
+}
+
+// Calcular total
+function calcularTotal() {
+    let carrito = cargarCarrito();
+    return carrito.reduce((total, item) => total + (item.precio * item.cantidad), 0);
+}
+
+
+PÁGINA DE CARRITO
+=================
+
+Crear: FrontEnd/Html/carrito.html
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - RPM Autopartes</title>
+    <link rel="stylesheet" href="../Css/Index.css">
+    <link rel="stylesheet" href="../Css/carrito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">...</header>
+    
+    <!-- Carrito -->
+    <section class="carrito-section">
+        <div class="container">
+            <h2>Mi Carrito</h2>
+            <div class="carrito-items" id="carritoContainer">
+                <!-- Items se cargan con JS -->
+            </div>
+            <div class="carrito-resumen">
+                <h3>Resumen</h3>
+                <p>Subtotal: <span id="subtotal">$0.00</span></p>
+                <p>Impuestos: <span id="impuestos">$0.00</span></p>
+                <p class="total">Total: <span id="total">$0.00</span></p>
+                <button class="btn btn-primary">Proceder al Pago</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">...</footer>
+    
+    <script src="../Js/data/productos.js"></script>
+    <script src="../Js/carrito.js"></script>
+</body>
+</html>
+
+
+BÚSQUEDA GLOBAL
+===============
+
+Agregar a Index.html header:
+
+<input type="search" id="searchBox" placeholder="Buscar productos..." class="search-input">
+
+JavaScript (agregar a Index.js):
+
+function buscarProductos(query) {
+    let resultados = [];
+    
+    for (const [categoria, prods] of Object.entries(productos)) {
+        const matches = prods.filter(p => 
+            p.nombre.toLowerCase().includes(query.toLowerCase()) ||
+            p.descripcion.toLowerCase().includes(query.toLowerCase())
+        );
+        resultados.push(...matches.map(m => ({...m, categoria})));
+    }
+    
+    mostrarResultadosBusqueda(resultados);
+}
+
+document.getElementById('searchBox').addEventListener('input', (e) => {
+    buscarProductos(e.target.value);
+});
+
+
+FILTROS AVANZADOS
+=================
+
+Agregar en categoria.html:
+
+<div class="advanced-filters">
+    <h3>Filtrar por</h3>
+    
+    <div class="filter-price">
+        <label>Rango de Precio</label>
+        <input type="range" id="priceMin" min="0" max="1000" value="0">
+        <input type="range" id="priceMax" min="0" max="1000" value="1000">
+        <p>$<span id="priceDisplay">0</span> - $<span id="priceDisplay2">1000</span></p>
+    </div>
+    
+    <div class="filter-material">
+        <label>Material</label>
+        <input type="checkbox" value="Acero Inoxidable"> Acero Inoxidable
+        <input type="checkbox" value="Aluminio"> Aluminio
+        <input type="checkbox" value="Acero"> Acero
+    </div>
+    
+    <button onclick="aplicarFiltros()" class="btn btn-primary">Aplicar Filtros</button>
+</div>
+
+JavaScript:
+
+function aplicarFiltros() {
+    const precioMin = parseInt(document.getElementById('priceMin').value);
+    const precioMax = parseInt(document.getElementById('priceMax').value);
+    
+    const filtrados = currentProducts.filter(p => 
+        p.precio >= precioMin && p.precio <= precioMax
+    );
+    
+    displayProducts(filtrados);
+}
+
+
+SISTEMA DE CALIFICACIONES
+==========================
+
+Estructura en productos.js:
+
+{
+    id: 1,
+    nombre: "Producto",
+    precio: 259.99,
+    // ... otros campos
+    calificaciones: {
+        promedio: 4.5,
+        total: 125,
+        detalles: [
+            { estrellas: 5, cantidad: 80 },
+            { estrellas: 4, cantidad: 30 },
+            { estrellas: 3, cantidad: 10 },
+            { estrellas: 2, cantidad: 5 },
+            { estrellas: 1, cantidad: 0 }
+        ]
+    }
+}
+
+HTML en modal:
+
+<div class="ratings">
+    <div class="average-rating">
+        <span class="stars">★★★★☆</span>
+        <span class="text">4.5 de 5 (125 reseñas)</span>
+    </div>
+    <div class="rating-distribution">
+        <!-- Barras de distribución -->
+    </div>
+</div>
+
+
+COMENTARIOS Y RESEÑAS
+====================
+
+Agregar en modal después de especificaciones:
+
+<div class="reviews-section">
+    <h3>Opiniones de Clientes</h3>
+    <div class="reviews-list" id="reviewsList">
+        <!-- Reseñas cargadas con JS -->
+    </div>
+    <form id="reviewForm" class="review-form">
+        <h4>Dejar tu opinión</h4>
+        <div class="form-group">
+            <label>Tu nombre</label>
+            <input type="text" required>
+        </div>
+        <div class="form-group">
+            <label>Calificación</label>
+            <div class="rating-input">
+                <i class="fas fa-star" onclick="setRating(1)"></i>
+                <i class="fas fa-star" onclick="setRating(2)"></i>
+                <i class="fas fa-star" onclick="setRating(3)"></i>
+                <i class="fas fa-star" onclick="setRating(4)"></i>
+                <i class="fas fa-star" onclick="setRating(5)"></i>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Comentario</label>
+            <textarea required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar Opinión</button>
+    </form>
+</div>
+
+
+COMPARATIVA DE PRODUCTOS
+========================
+
+Nueva página: FrontEnd/Html/comparar.html
+
+Permite seleccionar hasta 3-4 productos para ver lado a lado:
+- Especificaciones completas
+- Precios
+- Características únicas
+
+
+WISHLIST/DESEOS
+===============
+
+En categoria.js:
+
+function agregarAWishlist(productId) {
+    let wishlist = JSON.parse(localStorage.getItem('wishlist') || '[]');
+    if (!wishlist.includes(productId)) {
+        wishlist.push(productId);
+        localStorage.setItem('wishlist', JSON.stringify(wishlist));
+    }
+}
+
+function comparirWishlist() {
+    const wishlist = JSON.parse(localStorage.getItem('wishlist') || '[]');
+    const url = `compartir.html?items=${wishlist.join(',')}`;
+    // Copiar a clipboard o generar link compartible
+}
+
+
+NOTIFICACIONES
+==============
+
+Sistema de notificaciones mejorado:
+
+<div class="notifications" id="notificationContainer"></div>
+
+JavaScript:
+
+function mostrarNotificacion(mensaje, tipo = 'success') {
+    const container = document.getElementById('notificationContainer');
+    const notif = document.createElement('div');
+    notif.className = `notification ${tipo}`;
+    notif.innerHTML = `
+        <i class="fas fa-${tipo === 'success' ? 'check-circle' : 'exclamation-circle'}"></i>
+        <span>${mensaje}</span>
+        <button onclick="this.parentElement.remove()">×</button>
+    `;
+    container.appendChild(notif);
+    
+    setTimeout(() => notif.remove(), 4000);
+}
+
+
+FORMULARIO DE CONTACTO MEJORADO
+================================
+
+Agregar a Index.html footer:
+
+<section class="contact-section" id="contact">
+    <div class="container">
+        <h2>Contactanos</h2>
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <input type="text" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Tu email" required>
+            </div>
+            <div class="form-group">
+                <select required>
+                    <option>-- Selecciona un asunto --</option>
+                    <option>Consulta sobre producto</option>
+                    <option>Problema con pedido</option>
+                    <option>Sugerencia</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+        </form>
+    </div>
+</section>
+
+JavaScript:
+
+document.getElementById('contactForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    // Enviar a servidor o servicio de email
+    mostrarNotificacion('Mensaje enviado correctamente');
+});
+
+
+GALERÍA DE PROYECTOS
+====================
+
+Nueva página: FrontEnd/Html/galeria.html
+
+Muestra instalaciones reales en vehículos.
+
+
+BLOG/ARTÍCULOS
+==============
+
+Nueva sección: FrontEnd/Html/blog.html
+
+Contenido educativo:
+- Guías de instalación
+- Tips de mantenimiento
+- Comparativas de productos
+
+
+TABLA DE ESPECIFICACIONES
+=========================
+
+Mejorar visualización en modal:
+
+<table class="specs-table">
+    <thead>
+        <tr>
+            <th>Propiedad</th>
+            <th>Valor</th>
+        </tr>
+    </thead>
+    <tbody id="specsBody">
+        <!-- Generado dinámicamente -->
+    </tbody>
+</table>
+
+
+ZOOM EN IMÁGENES
+================
+
+Para galería del modal:
+
+<div class="image-zoom">
+    <img id="zoomImage" src="">
+</div>
+
+JavaScript:
+
+document.getElementById('zoomImage').addEventListener('wheel', (e) => {
+    e.preventDefault();
+    let scale = parseFloat(e.target.style.transform.match(/\d+/)) || 1;
+    scale += (e.deltaY > 0 ? -0.1 : 0.1);
+    e.target.style.transform = `scale(${Math.max(1, scale)})`;
+});
+
+
+IDIOMAS MÚLTIPLES (i18n)
+========================
+
+Crear: FrontEnd/Js/translations.js
+
+const translations = {
+    es: {
+        'inicio': 'Inicio',
+        'categorias': 'Categorías',
+        'contacto': 'Contacto'
+    },
+    en: {
+        'inicio': 'Home',
+        'categorias': 'Categories',
+        'contacto': 'Contact'
+    }
+};
+
+
+ANÁLITICA
+=========
+
+Agregar Google Analytics:
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_ID"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_ID');
+</script>
+
+
+INTEGRACIÓN CON EMAIL
+====================
+
+Backend endpoint para newsletter:
+
+POST /api/newsletter
+Body: { email: "user@example.com" }
+
+O usar servicio como:
+- Mailchimp
+- SendGrid
+- Formspree
+
+
+SIGUIENTES PASOS
+================
+
+Prioridad Alta:
+1. ✓ Página principal y categorías
+2. ✓ Modal de productos
+3. Carrito de compras
+4. Búsqueda
+
+Prioridad Media:
+5. Filtros avanzados
+6. Comentarios y calificaciones
+7. Wishlist
+8. Sistema de usuarios
+
+Prioridad Baja:
+9. Blog
+10. Comparativa
+11. Galería de proyectos
+12. Múltiples idiomas
+
+
+RECURSOS PARA DESARROLLO
+=========================
+
+Backend:
+- Node.js + Express
+- Python + Flask/Django
+- PHP + Laravel
+
+Base de datos:
+- MongoDB
+- PostgreSQL
+- MySQL
+
+Hosting:
+- Vercel (frontend)
+- Heroku (backend)
+- AWS (completo)
+
+
+---
+Extensiones v1.0
+Mayo 2026
