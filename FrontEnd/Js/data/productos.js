@@ -177,7 +177,7 @@ const productos = {
         },
         {
             id: 21,
-            nombre: "Catalizador D600 Corto OBD II - 5100CC",
+            nombre: "Catalizador D600 Corto V6 OBD II - 5100CC",
             precio: 42000.00,
             imagen: "../Img/Catalizadores/D600Corto/D600_Corto_Frontal.jpeg",
             imagenes: [
@@ -196,7 +196,7 @@ const productos = {
         },
         {
             id: 22,
-            nombre: "Catalizador D600 Largo OBD II - 5100CC",
+            nombre: "Catalizador D600 Largo V6 OBD II - 5100CC",
             precio: 42000.00,
             imagen: "../Img/Catalizadores/D600Largo/D600_Largo_Frontal.jpeg",
             imagenes: [
@@ -215,7 +215,7 @@ const productos = {
         },
         {
             id: 23,
-            nombre: "Catalizador D600 con Sensor OBD II - 5100CC",
+            nombre: "Catalizador D600 con Sensor V6 OBD II - 5100CC",
             precio: 42000.00,
             imagen: "../Img/Catalizadores/D600Sensor/D600_Sensor_Frontal.jpeg",
             imagenes: [
@@ -234,7 +234,7 @@ const productos = {
         },
         {
             id: 24,
-            nombre: "Catalizador D904 Corto OBD II - 7100CC",
+            nombre: "Catalizador D904 Corto V8 OBD II - 7100CC",
             precio: 57000.00,
             imagen: "../Img/Catalizadores/D904Corto/D904_Corto_Frontal.jpeg",
             imagenes: [
@@ -253,7 +253,7 @@ const productos = {
         },
         {
             id: 25,
-            nombre: "Catalizador D904 Largo OBD II - 7100CC",
+            nombre: "Catalizador D904 Largo V8 OBD II - 7100CC",
             precio: 57000.00,
             imagen: "../Img/Catalizadores/D904Largo/D904_Largo_Frontal.jpeg",
             imagenes: [
