@@ -139,7 +139,7 @@ const productos = {
         },
         {
             id: 19,
-            nombre: "Catalizador D400 V6 OBD I - 2800CC",
+            nombre: "Catalizador D400 V6 OBD I - 5100CC",
             precio: 32000.00,
             imagen: "../Img/Catalizadores/D400V6/D400_V6_Frontal.jpeg",
             imagenes: [
@@ -158,7 +158,7 @@ const productos = {
         },
         {
             id: 20,
-            nombre: "Catalizador D400 V8 OBD I - 2800CC",
+            nombre: "Catalizador D400 V8 OBD I - 5100CC",
             precio: 32000.00,
             imagen: "../Img/Catalizadores/D400V8/D400_V8_Frontal.jpeg",
             imagenes: [
