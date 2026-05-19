@@ -101,7 +101,7 @@ const productos = {
         },
         {
             id: 17,
-            nombre: "Catalizador D300 Corto OBD II - 2800CC",
+            nombre: "Catalizador D300 Corto OBD II - 2200CC",
             precio: 36000.00,
             imagen: "../Img/Catalizadores/D300Corto/D300_Corto_Frontal.jpeg",
             imagenes: [
@@ -109,26 +109,7 @@ const productos = {
                 "../Img/Catalizadores/D300Corto/D300_Corto_Horizontal.jpeg",
                 "../Img/Catalizadores/D300Corto/D300_Corto_Superior.jpeg"
             ],
-            descripcion: "Catalizador OBD II, hasta cilindraje 2800CC, ideal para cualquier modelo posterior a 1996.",
-            especificaciones: {
-                estandar: "Euro 5",
-                tipo: "OBD II",
-                bocas: "2.5 pulgadas",
-                largo: "12 Pulgadas",
-                garantia: "Ante defectos de Fabrica"
-            }
-        },
-        {
-            id: 18,
-            nombre: "Catalizador D300 Largo OBD II - 2800CC",
-            precio: 36000.00,
-            imagen: "../Img/Catalizadores/D300Largo/D300_Largo_Frontal.jpeg",
-            imagenes: [
-                "../Img/Catalizadores/D300Largo/D300_Largo_Frontal.jpeg",
-                "../Img/Catalizadores/D300Largo/D300_Largo_Horizontal.jpeg",
-                "../Img/Catalizadores/D300Largo/D300_Largo_Superior.jpeg"
-            ],
-            descripcion: "Catalizador OBD II, hasta cilindraje 2800CC, ideal para cualquier modelo posterior a 1996.",
+            descripcion: "Catalizador OBD II, hasta cilindraje 2200CC, ideal para cualquier modelo posterior a 1996.",
             especificaciones: {
                 estandar: "Euro 5",
                 tipo: "OBD II",
@@ -159,7 +140,7 @@ const productos = {
         {
             id: 20,
             nombre: "Catalizador D400 V8 OBD I - 5100CC",
-            precio: 32000.00,
+            precio: 45000.00,
             imagen: "../Img/Catalizadores/D400V8/D400_V8_Frontal.jpeg",
             imagenes: [
                 "../Img/Catalizadores/D400V8/D400_V8_Frontal.jpeg",
@@ -177,7 +158,7 @@ const productos = {
         },
         {
             id: 21,
-            nombre: "Catalizador D600 Corto V6 OBD II - 5100CC",
+            nombre: "Catalizador D600 Corto V6 OBD II - 4200CC",
             precio: 42000.00,
             imagen: "../Img/Catalizadores/D600Corto/D600_Corto_Frontal.jpeg",
             imagenes: [
@@ -185,7 +166,7 @@ const productos = {
                 "../Img/Catalizadores/D600Corto/D600_Corto_Horizontal.jpeg",
                 "../Img/Catalizadores/D600Corto/D600_Corto_Superior.jpeg"
             ],
-            descripcion: "Catalizador OBD II, hasta cilindraje 5100CC, ideal para modelos con motor V6 posteriores a 1996.",
+            descripcion: "Catalizador OBD II, hasta cilindraje 4200CC, ideal para modelos con motor V6 posteriores a 1996.",
             especificaciones: {
                 estandar: "Euro 5",
                 tipo: "OBD II",
@@ -196,7 +177,7 @@ const productos = {
         },
         {
             id: 22,
-            nombre: "Catalizador D600 Largo V6 OBD II - 5100CC",
+            nombre: "Catalizador D600 Largo V6 OBD II - 4200CC",
             precio: 42000.00,
             imagen: "../Img/Catalizadores/D600Largo/D600_Largo_Frontal.jpeg",
             imagenes: [
@@ -204,7 +185,7 @@ const productos = {
                 "../Img/Catalizadores/D600Largo/D600_Largo_Horizontal.jpeg",
                 "../Img/Catalizadores/D600Largo/D600_Largo_Superior.jpeg"
             ],
-            descripcion: "Catalizador OBD II, hasta cilindraje 5100CC, ideal para modelos con motor V6 posteriores a 1996.",
+            descripcion: "Catalizador OBD II, hasta cilindraje 4200CC, ideal para modelos con motor V6 posteriores a 1996.",
             especificaciones: {
                 estandar: "Euro 5",
                 tipo: "OBD II",
@@ -215,7 +196,7 @@ const productos = {
         },
         {
             id: 23,
-            nombre: "Catalizador D600 con Sensor V6 OBD II - 5100CC",
+            nombre: "Catalizador D600 con Sensor V6 OBD II - 4200CC",
             precio: 42000.00,
             imagen: "../Img/Catalizadores/D600Sensor/D600_Sensor_Frontal.jpeg",
             imagenes: [
@@ -223,7 +204,7 @@ const productos = {
                 "../Img/Catalizadores/D600Sensor/D600_Sensor_Horizontal.jpeg",
                 "../Img/Catalizadores/D600Sensor/D600_Sensor_Superior.jpeg"
             ],
-            descripcion: "Catalizador OBD II, hasta cilindraje 5100CC, ideal para modelos con motor V6 con sensor en el catalizador posteriores a 1996.",
+            descripcion: "Catalizador OBD II, hasta cilindraje 4200CC, ideal para modelos con motor V6 con sensor en el catalizador posteriores a 1996.",
             especificaciones: {
                 estandar: "Euro 5",
                 tipo: "OBD II",
@@ -234,7 +215,7 @@ const productos = {
         },
         {
             id: 24,
-            nombre: "Catalizador D904 Corto V8 OBD II - 7100CC",
+            nombre: "Catalizador D904 Corto V8 OBD II - 6700CC",
             precio: 57000.00,
             imagen: "../Img/Catalizadores/D904Corto/D904_Corto_Frontal.jpeg",
             imagenes: [
@@ -242,7 +223,7 @@ const productos = {
                 "../Img/Catalizadores/D904Corto/D904_Corto_Horizontal.jpeg",
                 "../Img/Catalizadores/D904Corto/D904_Corto_Superior.jpeg"
             ],
-            descripcion: "Catalizador OBD II, hasta cilindraje 7100CC, ideal para modelos con motor V8 posteriores a 1996.",
+            descripcion: "Catalizador OBD II, hasta cilindraje 6700CC, ideal para modelos con motor V8 posteriores a 1996.",
             especificaciones: {
                 estandar: "Euro 5",
                 tipo: "OBD II",
@@ -253,7 +234,7 @@ const productos = {
         },
         {
             id: 25,
-            nombre: "Catalizador D904 Largo V8 OBD II - 7100CC",
+            nombre: "Catalizador D904 Largo V8 OBD II - 6700CC",
             precio: 57000.00,
             imagen: "../Img/Catalizadores/D904Largo/D904_Largo_Frontal.jpeg",
             imagenes: [
@@ -261,7 +242,7 @@ const productos = {
                 "../Img/Catalizadores/D904Largo/D904_Largo_Horizontal.jpeg",
                 "../Img/Catalizadores/D904Largo/D904_Largo_Superior.jpeg"
             ],
-            descripcion: "Catalizador OBD II, hasta cilindraje 7100CC, ideal para modelos con motor V8 posteriores a 1996.",
+            descripcion: "Catalizador OBD II, hasta cilindraje 6700CC, ideal para modelos con motor V8 posteriores a 1996.",
             especificaciones: {
                 estandar: "Euro 5",
                 tipo: "OBD II",
