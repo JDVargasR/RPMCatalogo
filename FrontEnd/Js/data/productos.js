@@ -367,14 +367,19 @@ const productos = {
         },
         {
             id: 14,
-            nombre: "Flexible_08",
-            precio: 0.00,
-            imagen: "../Img/Flexibles/Flexible_08/main.jpg",
+            nombre: "Flexible 2 1/4 * 8 * 12 / Con Nipple",
+            precio: 9000.00,
+            imagen: "../Img/Flexibles/2148.png",
             imagenes: [
-                "../Img/Flexibles/Flexible_08/main.jpg"
+                "../Img/Flexibles/2148.png"
             ],
-            descripcion: "",
-            especificaciones: {}
+            descripcion: "Flexible de 2 1/4 * 8 * 12 con doble malla interna trenzada / Con Nipple",
+            especificaciones: {
+                estilo: "Doble Malla Interna Trenzada",
+                bocas: "2 1/4 Pulgadas",
+                largo: "8 Pulgadas",
+                garantia: "Ante defectos de Fabrica"
+            }
         },
         {
             id: 15,
@@ -395,7 +400,7 @@ const productos = {
         {
             id: 16,
             nombre: "Flexible 2 1/2 * 8 * 12 / Con Nipple",
-            precio: 8500.00,
+            precio: 9000.00,
             imagen: "../Img/Flexibles/2128.png",
             imagenes: [
                 "../Img/Flexibles/2128.png"
@@ -426,14 +431,19 @@ const productos = {
         },
         {
             id: 18,
-            nombre: "Flexible_12",
-            precio: 0.00,
-            imagen: "../Img/Flexibles/Flexible_12/main.jpg",
+            nombre: "Flexible 3 * 8 * 12 / Con Nipple",
+            precio: 16000.00,
+            imagen: "../Img/Flexibles/38.png",
             imagenes: [
-                "../Img/Flexibles/Flexible_12/main.jpg"
+                "../Img/Flexibles/38.png"
             ],
-            descripcion: "",
-            especificaciones: {}
+            descripcion: "Flexible de 3 * 8 * 12 con doble malla interna trenzada / Con Nipple",
+            especificaciones: {
+                estilo: "Doble Malla Interna Trenzada",
+                bocas: "3 Pulgadas",
+                largo: "8 Pulgadas",
+                garantia: "Ante defectos de Fabrica"
+            }
         },
         {
             id: 19,
