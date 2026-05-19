@@ -255,85 +255,115 @@ const productos = {
     Flexibles: [
         {
             id: 7,
-            nombre: "Flexible 1 3/4 * 4 * 8 - Con Nipple",
+            nombre: "Flexible 1 3/4 * 4 * 8 / Con Nipple",
             precio: 5500.00,
             imagen: "../Img/Flexibles/1344.png",
             imagenes: [
                 "../Img/Flexibles/1344.png"
             ],
-            descripcion: "Flexible doble malla interna trenzada, con Nipple.",
+            descripcion: "Flexible de 1 3/4 * 4 * 8 con doble malla interna trenzada / Con Nipple",
             especificaciones: {
                 estilo: "Doble Malla Interna Trenzada",
-                bocas: "1 3/4 pulgadas",
+                bocas: "1 3/4 Pulgadas",
                 largo: "4 Pulgadas",
                 garantia: "Ante defectos de Fabrica"
             }
         },
         {
             id: 8,
-            nombre: "Flexible_02",
-            precio: 0.00,
-            imagen: "../Img/Flexibles/Flexible_02/main.jpg",
+            nombre: "Flexible 1 3/4 * 6 * 10 / Con Nipple",
+            precio: 6000.00,
+            imagen: "../Img/Flexibles/1346.png",
             imagenes: [
-                "../Img/Flexibles/Flexible_02/main.jpg"
+                "../Img/Flexibles/1346.png"
             ],
-            descripcion: "",
-            especificaciones: {}
+            descripcion: "Flexible de 1 3/4 * 6 * 10 con doble malla interna trenzada / Con Nipple",
+            especificaciones: {
+                estilo: "Doble Malla Interna Trenzada",
+                bocas: "1 3/4 Pulgadas",
+                largo: "6 Pulgadas",
+                garantia: "Ante defectos de Fabrica"
+            }
         },
         {
             id: 9,
-            nombre: "Flexible_03",
-            precio: 0.00,
-            imagen: "../Img/Flexibles/Flexible_03/main.jpg",
+            nombre: "Flexible 1 3/4 * 8 * 12 / Con Nipple",
+            precio: 6500.00,
+            imagen: "../Img/Flexibles/1348.png",
             imagenes: [
-                "../Img/Flexibles/Flexible_03/main.jpg"
+                "../Img/Flexibles/1348.png"
             ],
-            descripcion: "",
-            especificaciones: {}
+            descripcion: "Flexible de 1 3/4 * 8 * 12 con doble malla interna trenzada / Con Nipple",
+            especificaciones: {
+                estilo: "Doble Malla Interna Trenzada",
+                bocas: "1 3/4 Pulgadas",
+                largo: "8 Pulgadas",
+                garantia: "Ante defectos de Fabrica"
+            }
         },
         {
             id: 10,
-            nombre: "Flexible_04",
-            precio: 0.00,
-            imagen: "../Img/Flexibles/Flexible_04/main.jpg",
+            nombre: "Flexible 2 * 4 * 8 / Con Nipple",
+            precio: 6000.00,
+            imagen: "../Img/Flexibles/24.png",
             imagenes: [
-                "../Img/Flexibles/Flexible_04/main.jpg"
+                "../Img/Flexibles/24.png"
             ],
-            descripcion: "",
-            especificaciones: {}
+            descripcion: "Flexible de 2 * 4 * 8 con doble malla interna trenzada / Con Nipple",
+            especificaciones: {
+                estilo: "Doble Malla Interna Trenzada",
+                bocas: "2 Pulgadas",
+                largo: "4 Pulgadas",
+                garantia: "Ante defectos de Fabrica"
+            }
         },
         {
             id: 11,
-            nombre: "Flexible_05",
-            precio: 0.00,
-            imagen: "../Img/Flexibles/Flexible_05/main.jpg",
+            nombre: "Flexible 2 * 6 * 10 / Con Nipple",
+            precio: 6500.00,
+            imagen: "../Img/Flexibles/26.png",
             imagenes: [
-                "../Img/Flexibles/Flexible_05/main.jpg"
+                "../Img/Flexibles/26.png"
             ],
-            descripcion: "",
-            especificaciones: {}
+            descripcion: "Flexible de 2 * 6 * 10 con doble malla interna trenzada / Con Nipple",
+            especificaciones: {
+                estilo: "Doble Malla Interna Trenzada",
+                bocas: "2 Pulgadas",
+                largo: "6 Pulgadas",
+                garantia: "Ante defectos de Fabrica"
+            }
         },
         {
             id: 12,
-            nombre: "Flexible_06",
-            precio: 0.00,
-            imagen: "../Img/Flexibles/Flexible_06/main.jpg",
+            nombre: "Flexible 2 * 8 * 12 / Con Nipple",
+            precio: 7000.00,
+            imagen: "../Img/Flexibles/28.png",
             imagenes: [
-                "../Img/Flexibles/Flexible_06/main.jpg"
+                "../Img/Flexibles/28.png"
             ],
-            descripcion: "",
-            especificaciones: {}
+            descripcion: "Flexible de 2 * 8 * 12 con doble malla interna trenzada / Con Nipple",
+            especificaciones: {
+                estilo: "Doble Malla Interna Trenzada",
+                bocas: "2 Pulgadas",
+                largo: "8 Pulgadas",
+                garantia: "Ante defectos de Fabrica"
+            }
         },
         {
             id: 13,
-            nombre: "Flexible_07",
-            precio: 0.00,
-            imagen: "../Img/Flexibles/Flexible_07/main.jpg",
+            nombre: "Flexible 2 1/4 * 6 * 10 / Con Nipple",
+            precio: 8500.00,
+            imagen: "../Img/Flexibles/2146.png",
             imagenes: [
-                "../Img/Flexibles/Flexible_07/main.jpg"
+                "../Img/Flexibles/2146.png"
             ],
-            descripcion: "",
-            especificaciones: {}
+            descripcion: "Flexible de 2 1/4 * 6 * 10 con doble malla interna trenzada / Con Nipple",
+            especificaciones: {
+                estilo: "Doble Malla Interna Trenzada",
+                bocas: "2 1/4 Pulgadas",
+                largo: "6 Pulgadas",
+                garantia: "Ante defectos de Fabrica"
+            }
         },
         {
             id: 14,
@@ -348,36 +378,51 @@ const productos = {
         },
         {
             id: 15,
-            nombre: "Flexible_09",
-            precio: 0.00,
-            imagen: "../Img/Flexibles/Flexible_09/main.jpg",
+            nombre: "Flexible 2 1/2 * 6 * 10 / Con Nipple",
+            precio: 8500.00,
+            imagen: "../Img/Flexibles/2126.png",
             imagenes: [
-                "../Img/Flexibles/Flexible_09/main.jpg"
+                "../Img/Flexibles/2126.png"
             ],
-            descripcion: "",
-            especificaciones: {}
+            descripcion: "Flexible de 2 1/2 * 6 * 10 con doble malla interna trenzada / Con Nipple",
+            especificaciones: {
+                estilo: "Doble Malla Interna Trenzada",
+                bocas: "2 1/2 Pulgadas",
+                largo: "6 Pulgadas",
+                garantia: "Ante defectos de Fabrica"
+            }
         },
         {
             id: 16,
-            nombre: "Flexible_10",
-            precio: 0.00,
-            imagen: "../Img/Flexibles/Flexible_10/main.jpg",
+            nombre: "Flexible 2 1/2 * 8 * 12 / Con Nipple",
+            precio: 8500.00,
+            imagen: "../Img/Flexibles/2128.png",
             imagenes: [
-                "../Img/Flexibles/Flexible_10/main.jpg"
+                "../Img/Flexibles/2128.png"
             ],
-            descripcion: "",
-            especificaciones: {}
+            descripcion: "Flexible de 2 1/2 * 8 * 12 con doble malla interna trenzada / Con Nipple",
+            especificaciones: {
+                estilo: "Doble Malla Interna Trenzada",
+                bocas: "2 1/2 Pulgadas",
+                largo: "8 Pulgadas",
+                garantia: "Ante defectos de Fabrica"
+            }
         },
         {
             id: 17,
-            nombre: "Flexible_11",
-            precio: 0.00,
-            imagen: "../Img/Flexibles/Flexible_11/main.jpg",
+            nombre: "Flexible 3 * 6 * 10 / Con Nipple",
+            precio: 16000.00,
+            imagen: "../Img/Flexibles/36.png",
             imagenes: [
-                "../Img/Flexibles/Flexible_11/main.jpg"
+                "../Img/Flexibles/36.png"
             ],
-            descripcion: "",
-            especificaciones: {}
+            descripcion: "Flexible de 3 * 6 * 10 con doble malla interna trenzada / Con Nipple",
+            especificaciones: {
+                estilo: "Doble Malla Interna Trenzada",
+                bocas: "3 Pulgadas",
+                largo: "6 Pulgadas",
+                garantia: "Ante defectos de Fabrica"
+            }
         },
         {
             id: 18,
@@ -392,36 +437,51 @@ const productos = {
         },
         {
             id: 19,
-            nombre: "Flexible_13",
-            precio: 0.00,
-            imagen: "../Img/Flexibles/Flexible_13/main.jpg",
+            nombre: "Flexible 2 * 8 / Sin Nipple",
+            precio: 9000.00,
+            imagen: "../Img/Flexibles/28Especial.png",
             imagenes: [
-                "../Img/Flexibles/Flexible_13/main.jpg"
+                "../Img/Flexibles/28Especial.png"
             ],
-            descripcion: "",
-            especificaciones: {}
+            descripcion: "Flexible de 2 * 8 con malla externa trensada, ideal para vehiculos con el flexible cruzado / Sin nipple",
+            especificaciones: {
+                estilo: "Malla Externa Trensada",
+                bocas: "2 Pulgadas",
+                largo: "8 Pulgadas",
+                garantia: "Ante defectos de Fabrica"
+            }
         },
         {
             id: 20,
-            nombre: "Flexible_14",
-            precio: 0.00,
-            imagen: "../Img/Flexibles/Flexible_14/main.jpg",
+            nombre: "Flexible 2 1/4 * 8 / Sin Nipple",
+            precio: 10000.00,
+            imagen: "../Img/Flexibles/2148Especial.png",
             imagenes: [
-                "../Img/Flexibles/Flexible_14/main.jpg"
+                "../Img/Flexibles/2148Especial.png"
             ],
-            descripcion: "",
-            especificaciones: {}
+            descripcion: "Flexible de 2 1/4 * 8 con malla externa trensada, ideal para vehiculos con el flexible cruzado / Sin nipple",
+            especificaciones: {
+                estilo: "Malla Externa Trensada",
+                bocas: "2 1/4 Pulgadas",
+                largo: "8 Pulgadas",
+                garantia: "Ante defectos de Fabrica"
+            }
         },
         {
             id: 21,
-            nombre: "Flexible_15",
-            precio: 0.00,
-            imagen: "../Img/Flexibles/Flexible_15/main.jpg",
+            nombre: "Flexible 2 1/2 * 8 / Sin Nipple",
+            precio: 11000.00,
+            imagen: "../Img/Flexibles/2128Especial.png",
             imagenes: [
-                "../Img/Flexibles/Flexible_15/main.jpg"
+                "../Img/Flexibles/2128Especial.png"
             ],
-            descripcion: "",
-            especificaciones: {}
+            descripcion: "Flexible de 2 1/2 * 8 con malla externa trensada, ideal para vehiculos con el flexible cruzado / Sin nipple",
+            especificaciones: {
+                estilo: "Malla Externa Trensada",
+                bocas: "2 1/2 Pulgadas",
+                largo: "8 Pulgadas",
+                garantia: "Ante defectos de Fabrica"
+            }
         }
     ],
     Accesorios: [
