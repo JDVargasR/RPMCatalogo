@@ -197,7 +197,7 @@ const productos = {
         {
             id: 23,
             nombre: "Catalizador D600 con Sensor V6 OBD II - 4200CC",
-            precio: 42000.00,
+            precio: 45000.00,
             imagen: "../Img/Catalizadores/D600Sensor/D600_Sensor_Frontal.jpeg",
             imagenes: [
                 "../Img/Catalizadores/D600Sensor/D600_Sensor_Frontal.jpeg",
@@ -255,54 +255,173 @@ const productos = {
     Flexibles: [
         {
             id: 7,
-            nombre: "Tubo Flexible Acero Inoxidable",
-            precio: 89.99,
-            imagen: "../Img/Flexibles/flexible1.jpg",
+            nombre: "Flexible 1 3/4 * 4 * 8 - Con Nipple",
+            precio: 5500.00,
+            imagen: "../Img/Flexibles/1344.png",
             imagenes: [
-                "../Img/Flexibles/flexible1.jpg"
+                "../Img/Flexibles/1344.png"
             ],
-            descripcion: "Tubo flexible corrugado en acero inoxidable. Resistente a vibraciones y corrosión. Disponible en varios diámetros.",
+            descripcion: "Flexible doble malla interna trenzada, con Nipple.",
             especificaciones: {
-                material: "Acero Inoxidable 304",
-                diametro: "2.5 pulgadas",
-                largo: "60 cm",
-                grosor_pared: "0.8 mm",
-                temperatura_max: "600°C"
+                estilo: "Doble Malla Interna Trenzada",
+                bocas: "1 3/4 pulgadas",
+                largo: "4 Pulgadas",
+                garantia: "Ante defectos de Fabrica"
             }
         },
         {
             id: 8,
-            nombre: "Tubo Flexible Presurizado",
-            precio: 129.99,
-            imagen: "../Img/Flexibles/flexible2.jpg",
+            nombre: "Flexible_02",
+            precio: 0.00,
+            imagen: "../Img/Flexibles/Flexible_02/main.jpg",
             imagenes: [
-                "../Img/Flexibles/flexible2.jpg"
+                "../Img/Flexibles/Flexible_02/main.jpg"
             ],
-            descripcion: "Tubo flexible de alta presión con refuerzo interior. Ideal para sistemas turbo.",
-            especificaciones: {
-                material: "Acero + Caucho",
-                diametro: "3 pulgadas",
-                largo: "75 cm",
-                presion_max: "3 bar",
-                temperatura_max: "500°C"
-            }
+            descripcion: "",
+            especificaciones: {}
         },
         {
             id: 9,
-            nombre: "Tubo Flexible Universal",
-            precio: 69.99,
-            imagen: "../Img/Flexibles/flexible3.jpg",
+            nombre: "Flexible_03",
+            precio: 0.00,
+            imagen: "../Img/Flexibles/Flexible_03/main.jpg",
             imagenes: [
-                "../Img/Flexibles/flexible3.jpg"
+                "../Img/Flexibles/Flexible_03/main.jpg"
             ],
-            descripcion: "Tubo flexible universal adaptable. Compatible con múltiples conexiones.",
-            especificaciones: {
-                material: "Acero Galvanizado",
-                diametro: "2.25 pulgadas",
-                largo: "50 cm",
-                grosor_pared: "0.6 mm",
-                temperatura_max: "400°C"
-            }
+            descripcion: "",
+            especificaciones: {}
+        },
+        {
+            id: 10,
+            nombre: "Flexible_04",
+            precio: 0.00,
+            imagen: "../Img/Flexibles/Flexible_04/main.jpg",
+            imagenes: [
+                "../Img/Flexibles/Flexible_04/main.jpg"
+            ],
+            descripcion: "",
+            especificaciones: {}
+        },
+        {
+            id: 11,
+            nombre: "Flexible_05",
+            precio: 0.00,
+            imagen: "../Img/Flexibles/Flexible_05/main.jpg",
+            imagenes: [
+                "../Img/Flexibles/Flexible_05/main.jpg"
+            ],
+            descripcion: "",
+            especificaciones: {}
+        },
+        {
+            id: 12,
+            nombre: "Flexible_06",
+            precio: 0.00,
+            imagen: "../Img/Flexibles/Flexible_06/main.jpg",
+            imagenes: [
+                "../Img/Flexibles/Flexible_06/main.jpg"
+            ],
+            descripcion: "",
+            especificaciones: {}
+        },
+        {
+            id: 13,
+            nombre: "Flexible_07",
+            precio: 0.00,
+            imagen: "../Img/Flexibles/Flexible_07/main.jpg",
+            imagenes: [
+                "../Img/Flexibles/Flexible_07/main.jpg"
+            ],
+            descripcion: "",
+            especificaciones: {}
+        },
+        {
+            id: 14,
+            nombre: "Flexible_08",
+            precio: 0.00,
+            imagen: "../Img/Flexibles/Flexible_08/main.jpg",
+            imagenes: [
+                "../Img/Flexibles/Flexible_08/main.jpg"
+            ],
+            descripcion: "",
+            especificaciones: {}
+        },
+        {
+            id: 15,
+            nombre: "Flexible_09",
+            precio: 0.00,
+            imagen: "../Img/Flexibles/Flexible_09/main.jpg",
+            imagenes: [
+                "../Img/Flexibles/Flexible_09/main.jpg"
+            ],
+            descripcion: "",
+            especificaciones: {}
+        },
+        {
+            id: 16,
+            nombre: "Flexible_10",
+            precio: 0.00,
+            imagen: "../Img/Flexibles/Flexible_10/main.jpg",
+            imagenes: [
+                "../Img/Flexibles/Flexible_10/main.jpg"
+            ],
+            descripcion: "",
+            especificaciones: {}
+        },
+        {
+            id: 17,
+            nombre: "Flexible_11",
+            precio: 0.00,
+            imagen: "../Img/Flexibles/Flexible_11/main.jpg",
+            imagenes: [
+                "../Img/Flexibles/Flexible_11/main.jpg"
+            ],
+            descripcion: "",
+            especificaciones: {}
+        },
+        {
+            id: 18,
+            nombre: "Flexible_12",
+            precio: 0.00,
+            imagen: "../Img/Flexibles/Flexible_12/main.jpg",
+            imagenes: [
+                "../Img/Flexibles/Flexible_12/main.jpg"
+            ],
+            descripcion: "",
+            especificaciones: {}
+        },
+        {
+            id: 19,
+            nombre: "Flexible_13",
+            precio: 0.00,
+            imagen: "../Img/Flexibles/Flexible_13/main.jpg",
+            imagenes: [
+                "../Img/Flexibles/Flexible_13/main.jpg"
+            ],
+            descripcion: "",
+            especificaciones: {}
+        },
+        {
+            id: 20,
+            nombre: "Flexible_14",
+            precio: 0.00,
+            imagen: "../Img/Flexibles/Flexible_14/main.jpg",
+            imagenes: [
+                "../Img/Flexibles/Flexible_14/main.jpg"
+            ],
+            descripcion: "",
+            especificaciones: {}
+        },
+        {
+            id: 21,
+            nombre: "Flexible_15",
+            precio: 0.00,
+            imagen: "../Img/Flexibles/Flexible_15/main.jpg",
+            imagenes: [
+                "../Img/Flexibles/Flexible_15/main.jpg"
+            ],
+            descripcion: "",
+            especificaciones: {}
         }
     ],
     Accesorios: [
