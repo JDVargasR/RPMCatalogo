@@ -497,50 +497,104 @@ const productos = {
     Accesorios: [
         {
             id: 10,
-            nombre: "Brida de Sujeción Premium",
-            precio: 24.99,
-            imagen: "../Img/Accesorios/brida1.jpg",
+            nombre: "V - Band 5 Pulgadas",
+            precio: 21000.00,
+            imagen: "../Img/Accesorios/VBands/V_Band5/V_Band5.png",
             imagenes: [
-                "../Img/Accesorios/brida1.jpg"
+                "../Img/Accesorios/VBands/V_Band5/V_Band5.png",
+                "../Img/Accesorios/VBands/V_Band5/V_Band5Horizontal.png"
             ],
-            descripcion: "Brida de sujeción en acero inoxidable. Diferentes tamaños disponibles. Pack de 5 unidades.",
+            descripcion: "Abrazadera V-Band de 5 pulgadas, material de alta calidad para un sellado perfecto en sistemas de escape",
             especificaciones: {
-                material: "Acero Inoxidable 304",
-                diametro: "2.5 pulgadas",
-                cantidad: "5 unidades",
-                presion_maxima: "5 bar"
+                material: "Acero Inoxidable",
+                diametro: "5 Pulgadas",
+                contenido: "2 Anillas y 1 Abrazadera",
+                garantia: "Ante defectos de Fabrica"
             }
         },
         {
             id: 11,
-            nombre: "Kit de Aislamiento Térmico",
-            precio: 149.99,
-            imagen: "../Img/Accesorios/aislamiento1.jpg",
+            nombre: "V - Band 4 Pulgadas",
+            precio: 18000.00,
+            imagen: "../Img/Accesorios/VBands/V_Band4/V_Band4.png",
             imagenes: [
-                "../Img/Accesorios/aislamiento1.jpg"
+                "../Img/Accesorios/VBands/V_Band4/V_Band4.png",
+                "../Img/Accesorios/VBands/V_Band4/V_Band4Horizontal.png"
             ],
-            descripcion: "Kit completo de aislamiento térmico. Protege el motor y reduce calor radiante.",
+            descripcion: "Abrazadera V-Band de 4 pulgadas, material de alta calidad para un sellado perfecto en sistemas de escape",
             especificaciones: {
-                material: "Fibra de Cerámica",
-                grosor: "10 mm",
-                cobertura: "3 metros",
-                temperatura_max: "1200°C"
+                material: "Acero Inoxidable",
+                diametro: "4 Pulgadas",
+                contenido: "2 Anillas y 1 Abrazadera",
+                garantia: "Ante defectos de Fabrica"
             }
         },
         {
             id: 12,
-            nombre: "Sensor Lambda Reemplazo",
-            precio: 89.99,
-            imagen: "../Img/Accesorios/sensor1.jpg",
+            nombre: "V - Band 3 Pulgadas",
+            precio: 15000.00,
+            imagen: "../Img/Accesorios/VBands/V_Band3/V_Band3.png",
             imagenes: [
-                "../Img/Accesorios/sensor1.jpg"
+                "../Img/Accesorios/VBands/V_Band3/V_Band3.png",
+                "../Img/Accesorios/VBands/V_Band3/V_Band3Horizontal.png"
             ],
-            descripcion: "Sensor lambda de reemplazo OEM. Compatible con sistemas Euro 4-6.",
+            descripcion: "Abrazadera V-Band de 3 pulgadas, material de alta calidad para un sellado perfecto en sistemas de escape",
             especificaciones: {
-                tipo: "Sensor O2",
-                conexion: "4 pines",
-                voltaje: "12V",
-                garantia: "1 año"
+                material: "Acero Inoxidable",
+                diametro: "3 Pulgadas",
+                contenido: "2 Anillas y 1 Abrazadera",
+                garantia: "Ante defectos de Fabrica"
+            }
+        },
+        {
+            id: 26,
+            nombre: "V - Band 2 1/2 Pulgadas",
+            precio: 13000.00,
+            imagen: "../Img/Accesorios/VBands/V_Band212/V_Band212.png",
+            imagenes: [
+                "../Img/Accesorios/VBands/V_Band212/V_Band212.png",
+                "../Img/Accesorios/VBands/V_Band212/V_Band212Horizontal.png"
+            ],
+            descripcion: "Abrazadera V-Band de 2 1/2 pulgadas, material de alta calidad para un sellado perfecto en sistemas de escape",
+            especificaciones: {
+                material: "Acero Inoxidable",
+                diametro: "2 1/2 Pulgadas",
+                contenido: "2 Anillas y 1 Abrazadera",
+                garantia: "Ante defectos de Fabrica"
+            }
+        },
+        {
+            id: 27,
+            nombre: "V - Band 2 1/4 Pulgadas",
+            precio: 12500.00,
+            imagen: "../Img/Accesorios/VBands/V_Band214/V_Band214.png",
+            imagenes: [
+                "../Img/Accesorios/VBands/V_Band214/V_Band214.png",
+                "../Img/Accesorios/VBands/V_Band214/V_Band214Horizontal.png"
+            ],
+            descripcion: "Abrazadera V-Band de 2 1/4 pulgadas, material de alta calidad para un sellado perfecto en sistemas de escape",
+            especificaciones: {
+                material: "Acero Inoxidable",
+                diametro: "2 1/4 Pulgadas",
+                contenido: "2 Anillas y 1 Abrazadera",
+                garantia: "Ante defectos de Fabrica"
+            }
+        },
+        {
+            id: 28,
+            nombre: "V - Band 2 Pulgadas",
+            precio: 12500.00,
+            imagen: "../Img/Accesorios/VBands/V_Band2/V_Band2.png",
+            imagenes: [
+                "../Img/Accesorios/VBands/V_Band2/V_Band2.png",
+                "../Img/Accesorios/VBands/V_Band2/V_Band2Horizontal.png"
+            ],
+            descripcion: "Abrazadera V-Band de 2 pulgadas, material de alta calidad para un sellado perfecto en sistemas de escape",
+            especificaciones: {
+                material: "Acero Inoxidable",
+                diametro: "2 Pulgadas",
+                contenido: "2 Anillas y 1 Abrazadera",
+                garantia: "Ante defectos de Fabrica"
             }
         }
     ],
