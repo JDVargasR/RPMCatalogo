@@ -583,7 +583,7 @@ const productos = {
         {
             id: 28,
             nombre: "V - Band 2 Pulgadas",
-            precio: 12500.00,
+            precio: 12000.00,
             imagen: "../Img/Accesorios/VBands/V_Band2/V_Band2.png",
             imagenes: [
                 "../Img/Accesorios/VBands/V_Band2/V_Band2.png",
@@ -594,6 +594,60 @@ const productos = {
                 material: "Acero Inoxidable",
                 diametro: "2 Pulgadas",
                 contenido: "2 Anillas y 1 Abrazadera",
+                garantia: "Ante defectos de Fabrica"
+            }
+        },
+        {
+            id: 29,
+            nombre: "Sección sistema de escape en forma de 'X' - 2 1/4 Pulgadas",
+            precio: 13000.00,
+            imagen: "../Img/Accesorios/X/214/214Frente.png",
+            imagenes: [
+                "../Img/Accesorios/X/214/214Frente.png",
+                "../Img/Accesorios/X/214/214Bocas.png",
+                "../Img/Accesorios/X/214/214Horizontal.png"
+            ],
+            descripcion: "Sección en forma de 'X' para sistemas de escape, doble entrada y doble salida, fabricada en acero aluminizado de alta resistencia. Mejora el flujo de gases y el rendimiento del motor.",
+            especificaciones: {
+                material: "Hierro Aluminizado",
+                bocas: "2 1/4 Pulgadas",
+                largo: "12 Pulgadas",
+                garantia: "Ante defectos de Fabrica"
+            }
+        },
+        {
+            id: 30,
+            nombre: "Sección sistema de escape en forma de 'X' - 2 1/2 Pulgadas",
+            precio: 14000.00,
+            imagen: "../Img/Accesorios/X/212/212Frente.png",
+            imagenes: [
+                "../Img/Accesorios/X/212/212Frente.png",
+                "../Img/Accesorios/X/212/212Bocas.png",
+                "../Img/Accesorios/X/212/212Horizontal.png"
+            ],
+            descripcion: "Sección en forma de 'X' para sistemas de escape, doble entrada y doble salida, fabricada en acero aluminizado de alta resistencia. Mejora el flujo de gases y el rendimiento del motor.",
+            especificaciones: {
+                material: "Hierro Aluminizado",
+                bocas: "2 1/2 Pulgadas",
+                largo: "12 Pulgadas",
+                garantia: "Ante defectos de Fabrica"
+            }
+        },
+        {
+            id: 31,
+            nombre: "Sección sistema de escape en forma de 'X' - 3 Pulgadas",
+            precio: 15000.00,
+            imagen: "../Img/Accesorios/X/3/3Frente.png",
+            imagenes: [
+                "../Img/Accesorios/X/3/3Frente.png",
+                "../Img/Accesorios/X/3/3Bocas.png",
+                "../Img/Accesorios/X/3/3Horizontal.png"
+            ],
+            descripcion: "Sección en forma de 'X' para sistemas de escape, doble entrada y doble salida, fabricada en acero aluminizado de alta resistencia. Mejora el flujo de gases y el rendimiento del motor.",
+            especificaciones: {
+                material: "Hierro Aluminizado",
+                bocas: "3 Pulgadas",
+                largo: "12 Pulgadas",
                 garantia: "Ante defectos de Fabrica"
             }
         }
