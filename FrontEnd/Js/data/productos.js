@@ -650,6 +650,44 @@ const productos = {
                 largo: "12 Pulgadas",
                 garantia: "Ante defectos de Fabrica"
             }
+        },
+        {
+            id: 32,
+            nombre: "Roncador estilo N1 Punta Tornasol - Con Tapon",
+            precio: 40000.00,
+            imagen: "../Img/Accesorios/N1/Tornasol/N1THorizontal.png",
+            imagenes: [
+                "../Img/Accesorios/N1/Tornasol/N1THorizontal.png",
+                "../Img/Accesorios/N1/Tornasol/N1TTapon.png",
+                "../Img/Accesorios/N1/Tornasol/N1TVertical.png"
+            ],
+            descripcion: "Roncador estilo N1 con tapon para la regulación de sonido, con acabodo de punta tornasol. Ideal para mejorar la apariencia y el sonido del vehículo.",
+            especificaciones: {
+                material: "Acero Inoxidable con Acabado Tornasol",
+                bocas: "2 1/2 Pulgadas",
+                cuerpo: "5 Pulgadas",
+                largo: "19 Pulgadas",
+                garantia: "Ante defectos de Fabrica"
+            }
+        },
+        {
+            id: 33,
+            nombre: "Roncador estilo N1 Punta Curva - Sin Tapon",
+            precio: 45000.00,
+            imagen: "../Img/Accesorios/N1/Curvo/N1CBoca.png",
+            imagenes: [
+                "../Img/Accesorios/N1/Curvo/N1CBoca.png",
+                "../Img/Accesorios/N1/Curvo/N1CHorizontal.png",
+                "../Img/Accesorios/N1/Curvo/N1CVertical.png"
+            ],
+            descripcion: "Roncador estilo N1 con tapon para la regulación de sonido, con acabodo de punta tornasol. Ideal para mejorar la apariencia y el sonido del vehículo.",
+            especificaciones: {
+                material: "Acero Inoxidable con Acabado Tornasol",
+                bocas: "2 1/2 Pulgadas",
+                cuerpo: "5 Pulgadas",
+                largo: "19 Pulgadas",
+                garantia: "Ante defectos de Fabrica"
+            }
         }
     ],
     Extras: [
