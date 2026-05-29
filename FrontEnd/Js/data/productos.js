@@ -684,8 +684,88 @@ const productos = {
             especificaciones: {
                 material: "Acero Inoxidable con Acabado Tornasol",
                 bocas: "2 1/2 Pulgadas",
-                cuerpo: "5 Pulgadas",
+                cuerpo: "3 Pulgadas",
                 largo: "19 Pulgadas",
+                garantia: "Ante defectos de Fabrica"
+            }
+        },
+        {
+            id: 34,
+            nombre: "AltoFlujo Inoxidable - 2 1/4 Pulgadas",
+            precio: 28000.00,
+            imagen: "../Img/Accesorios/AltoFlujos/Inoxidables/214/214.png",
+            imagenes: [
+                "../Img/Accesorios/AltoFlujos/Inoxidables/214/214.png"
+            ],
+            descripcion: "AltoFlujo de acero inoxidable, estructura interna igual al MagnaFlow. Ideal para mejorar la apariencia y el sonido del vehículo.",
+            especificaciones: {
+                material: "Acero Inoxidable",
+                bocas: "2 1/4 Pulgadas",
+                cuerpo: "19 Pulgadas",
+                garantia: "Ante defectos de Fabrica"
+            }
+        },
+        {
+            id: 35,
+            nombre: "AltoFlujo Inoxidable - 2 1/2 Pulgadas",
+            precio: 28000.00,
+            imagen: "../Img/Accesorios/AltoFlujos/Inoxidables/212/212.png",
+            imagenes: [
+                "../Img/Accesorios/AltoFlujos/Inoxidables/212/212.png"
+            ],
+            descripcion: "AltoFlujo de acero inoxidable, estructura interna igual al MagnaFlow. Ideal para mejorar la apariencia y el sonido del vehículo.",
+            especificaciones: {
+                material: "Acero Inoxidable",
+                bocas: "2 1/2 Pulgadas",
+                cuerpo: "19 Pulgadas",
+                garantia: "Ante defectos de Fabrica"
+            }
+        },
+        {
+            id: 36,
+            nombre: "AltoFlujo Aluminizado - 2 1/4 Pulgadas",
+            precio: 21000.00,
+            imagen: "../Img/Accesorios/AltoFlujos/Aluminizados/214/214.png",
+            imagenes: [
+                "../Img/Accesorios/AltoFlujos/Aluminizados/214/214.png"
+            ],
+            descripcion: "AltoFlujo de hierro aluminizado, estructura interna igual al FlowMaster. Ideal para mejorar la apariencia y el sonido del vehículo.",
+            especificaciones: {
+                material: "Hierro Aluminizado",
+                bocas: "2 1/4 Pulgadas",
+                cuerpo: "19 Pulgadas",
+                garantia: "Ante defectos de Fabrica"
+            }
+        },
+        {
+            id: 37,
+            nombre: "AltoFlujo Aluminizado - 2 1/2 Pulgadas",
+            precio: 21000.00,
+            imagen: "../Img/Accesorios/AltoFlujos/Aluminizados/212/212.png",
+            imagenes: [
+                "../Img/Accesorios/AltoFlujos/Aluminizados/212/212.png"
+            ],
+            descripcion: "AltoFlujo de hierro aluminizado, estructura interna igual al FlowMaster. Ideal para mejorar la apariencia y el sonido del vehículo.",
+            especificaciones: {
+                material: "Hierro Aluminizado",
+                bocas: "2 1/2 Pulgadas",
+                cuerpo: "19 Pulgadas",
+                garantia: "Ante defectos de Fabrica"
+            }
+        },
+        {
+            id: 38,
+            nombre: "AltoFlujo Aluminizado Doble Salida - 2 1/2 Pulgadas",
+            precio: 25000.00,
+            imagen: "../Img/Accesorios/AltoFlujos/Aluminizados/Doble212/Doble212.png",
+            imagenes: [
+                "../Img/Accesorios/AltoFlujos/Aluminizados/Doble212/Doble212.png"
+            ],
+            descripcion: "AltoFlujo de hierro aluminizado doble salida, estructura interna igual al FlowMaster. Ideal para mejorar la apariencia y el sonido del vehículo.",
+            especificaciones: {
+                material: "Hierro Aluminizado",
+                bocas: "2 1/2 Pulgadas",
+                cuerpo: "19 Pulgadas",
                 garantia: "Ante defectos de Fabrica"
             }
         }
